@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WHAC-A-MOLE</title>
+</head>
+
+<body>
+    <div class="container flex-center">
+        <div class="wrapper">
+            <div class="title-row flex-center">
+                <h1>Övning: WHAC-A-MOLE</h1>
+            </div>
+            <div class="flex-row flex-center margin-bottom">
+                <div class="flex-semi flex-center">Poäng: <span id="gamePoints"></span></div>
+                <div class="flex-semi flex-center">Tid: <span id="gameTime"></span></div>
+            </div>
+            <div class="flex-row flex-center margin-bottom">
+                <div id="gameBoard" class="grid"></div>
+            </div>
+            <div class="flex-row flex-center margin-bottom">
+                <button id="start-button">Starta spel</button>
+                <button id="test-button">Testa funktioner</button>
+            </div>
+            <div class="flex-row flex-center">
+                <h2 id="success" style="display: none;">Ditt spel fungerar enligt samtliga tester, snyggt!</h1>
+                <h2 id="fail" style="display: none;">Hoppsan, något blev fel:</h2>
+                <ul id="fail-ul" style="display: none;">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script type="module" src="./javascripts/result.js"></script> 
+    <script type="module" src="javascripts/test.js"></script>
+</body>
+
+</html>
